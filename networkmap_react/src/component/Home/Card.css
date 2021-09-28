@@ -1,0 +1,28 @@
+.Card{
+    width: 100%;
+    max-width: 350px;
+    height: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer!important;
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(5px);
+    transition: all 0.1s;
+}
+    .Card *{
+        cursor: pointer!important;
+    }
+
+    .Card:hover{
+        transform: translateY(-2px);
+        box-shadow: 2px 2px 7px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.1s;
+    }
+
+    .Card:active{
+        transform: translateY(-1px);
+        box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.15);
+        transition: all 0.05s;
+    }

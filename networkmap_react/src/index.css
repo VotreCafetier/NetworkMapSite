@@ -1,0 +1,23 @@
+*, html {
+  margin: 0 !important;
+}
+
+html, body{
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, select, div, footer, header, section, nav{
+  cursor: default;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(196 198 203);
+}
