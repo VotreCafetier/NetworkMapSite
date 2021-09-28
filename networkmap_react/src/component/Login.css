@@ -1,0 +1,30 @@
+#login_page{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+    #login_page > div{
+        display: block;
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+    }
+
+form > *{
+    display: block;
+    margin: auto!important;
+    margin-top: 10px!important;
+}
+
+h2{
+    color: var(--primary-color);
+}
+
+form > *:last-child, form > *:first-child{
+    margin-top: 25px!important;
+}

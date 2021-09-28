@@ -1,9 +1,10 @@
-import React, {ReactDOM} from 'react'
+import React from 'react'
+import './Footer.css';
 
 export default function Footer() {
     return (
         <footer>
-            This is a footer
+            <h5>This is a footer</h5>
         </footer>
     )
 }

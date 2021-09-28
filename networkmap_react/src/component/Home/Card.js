@@ -1,18 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Card.css';
 
-class Card extends Component{
-    render(){
-        const { title, description, img, alt } = this.props;
-        return(
-            <div class="Card">
-                <img src={img} alt={alt}/>
-                <h4>{title}</h4>
-                <p>{description}</p>
+const Card = (props) =>{
+    const { card } = props;
+    const cardList = card.map(c => {
+        return (
+            <div className="Card" key={c.id}>
+                <img src={c.img} alt={c.alt}/>
+                <h4>{c.title}</h4>
+                <p>{c.description}</p>
             </div>
         )
-    }
-        
+    })
+    return (
+        <div id="card_holder">
+            { cardList }
+        </div>
+    )
 }
 
 export default Card
