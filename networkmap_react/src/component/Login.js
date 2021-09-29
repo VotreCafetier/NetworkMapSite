@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import  { Redirect, withRouter } from 'react-router-dom'
 import './Login.css';
 
 class Login extends Component {
@@ -14,6 +15,13 @@ class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
+    // JUST A PLACEHOLDER
+    if (this.state.email === "danygauthier57@yahoo.ca" && this.state.password === "Abc123$"){
+      this.props.history.push("/")
+    }
+    else{
+      console.log('There was an error');
+    }
   }
   render() {
     return (
@@ -31,4 +39,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root{
-  --primary-color : red;
-  --darker-primary : darkred;
-  --secondary-color : blue;
+  --primary-color : #0B3954;
+  --darker-primary : #092f44;
+  --secondary-color : #BFD7EA;
   --darker-secondary : darkblue;
   --white : white;
   --lightgray : rgb(225 225 225);
@@ -48,10 +48,17 @@ button{
   border: 0;
   font-size: 14pt;
   background-color: var(--primary-color);
+  transition: all 0.1s;
 }
 
   button:hover{
     background-color: var(--darker-primary);
+    transition: all 0.1s;
+  }
+
+  button:active{
+    transform: translateY(1px);
+    transition: all 0.05s;
   }
 
 input{

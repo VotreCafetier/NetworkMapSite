@@ -43,7 +43,7 @@
     padding-top: 20px!important;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     margin: auto!important;
     justify-content: space-evenly;
     width: 100%;
