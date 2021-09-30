@@ -1,0 +1,12 @@
+nav{
+    background-color: var(--primary-color)!important;
+    box-shadow: 1px 2px 7px 5px rgba(0, 0, 0, 0.05);
+}
+
+nav a{
+    color: white!important;
+}
+
+    nav a:hover{
+        text-decoration: underline;
+    }

@@ -7,12 +7,11 @@ export default class Card extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          showComponent: false,
+            showComponent: false,
         };
         this.handleClick = this.handleClick.bind(this);
         this.id = 0;
-      }
-    
+    }
     handleClick = (id) => {
         const s = this.state;
         s.showComponent === true? this.setState({showComponent : false}): this.setState({showComponent : true});

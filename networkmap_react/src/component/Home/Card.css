@@ -9,7 +9,7 @@
     cursor: pointer!important;
     box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.075);
     background-color: rgba(255, 255, 255, 0.1);  
-    -webkit-filter: grayscale(100%);
+    -webkit-filter: grayscale(60%);
     filter: grayscale(60%);
     padding: 15px;
     color:white;
@@ -18,6 +18,10 @@
     align-items: center;
     justify-self: center;
 }
+
+    .Card > div{
+        width: 100%;
+    }
 
     .Card::before{
         content: "";
@@ -44,7 +48,7 @@
     }
 
     .Card:active{
-        transform: translateY(0);
+        transform: translateY(1px);
         box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.075);
         -webkit-filter: none !important; 
         filter: none !important;
@@ -107,8 +111,8 @@
 #card_holder{
     display: grid;
     padding-top: 20px!important;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-column-gap: 4%;
+    grid-row-gap: 4%;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     margin: auto!important;
     justify-content: space-evenly;

@@ -5,7 +5,7 @@
   --darker-primary : #092f44;
   --secondary-color : #BFD7EA;
   --darker-secondary : darkblue;
-  --white : white;
+  --white : rgb(228, 228, 228);
   --lightgray : rgb(225 225 225);
 }
 
@@ -28,7 +28,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(196 198 203);
+  background-color: var(--white);
 }
 
 nav > *, footer > *, section{
@@ -68,4 +68,5 @@ input{
   height: 35px;
   border-radius: 3px;
   padding: 0 15px;
+  background-color: #f3f3f3;
 }

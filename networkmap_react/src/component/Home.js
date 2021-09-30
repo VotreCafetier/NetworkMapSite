@@ -16,13 +16,8 @@ class Home extends Component{
           img: PiholeBackground,
           alt: 'There is no image'
         },
-        {id: 2, title: "Router",description: "Router",img : "",alt : "There is no image"},
-        {id: 3, title: "Router",description: "Router",img : "",alt : "There is no image"},
-        {id: 4, title: "Router",description: "Router",img : "",alt : "There is no image"},
-        {id: 5, title: "Router",description: "Router",img : "",alt : "There is no image"},
-        {id: 6, title: "Router",description: "Router",img : "",alt : "There is no image"},
-        {id: 7, title: "Router",description: "Router",img : "",alt : "There is no image"},
-        {id: 8, title: "Router",description: "Router",img : "",alt : "There is no image"}
+        {id: 2, title: "Router",description: "RT-AC5300",img : "",alt : "There is no image"},
+        {id: 3, title: "Router",description: "Router",img : "",alt : "There is no image"}
       ]
     }
     render() {
