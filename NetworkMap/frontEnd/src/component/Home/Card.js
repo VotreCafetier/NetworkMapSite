@@ -21,13 +21,13 @@ export default class Card extends Component {
         const { card } = this.props;
         const cardList = card.map(c => {
             return (
-                <div className="Card" key={c.card_id} onClick={() => this.handleClick(c.id)}>
+                <div className="Card" key={c.card_ID} onClick={() => this.handleClick(c.id)}>
                     <div>
                         <span></span>
                         <span></span>
-                        <img src={c.img} alt={c.ctitle+"_icon"}/>
-                        <h4>{c.ctitle}</h4>
-                        <p>{c.cdescription}</p>
+                        <img src={c.cImage} alt={c.cTitle+"_icon"}/>
+                        <h4>{c.cTitle}</h4>
+                        <p>{c.cDescription}</p>
                     </div>
                 </div>
             )

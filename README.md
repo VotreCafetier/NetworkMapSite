@@ -19,6 +19,5 @@ Network Map of my own place. Shows status of servers, Bot, etc.
 - On keypress enter login
 
 ## Nice to have
-- Add a close icon for detail view
 - faire favicon
 - Ajouter image pour router

@@ -3,5 +3,5 @@ CREATE TABLE IF NOT EXISTS CARD (
     cTitle NVARCHAR(20) NOT NULL,
     cAddress NVARCHAR(255),
     cDescription TEXT,
-    cImage NVARCHAR(255)
+    /*c Image NVARCHAR(255) */
 );
