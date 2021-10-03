@@ -14,10 +14,15 @@ class Home extends Component{
           title: 'Pi-hole', 
           description: `General purpose network-wide ad-blocker that protects your network from ads.`,
           img: PiholeBackground,
-          alt: 'There is no image'
+          link: '192.168.0.105'
         },
-        {id: 2, title: "Router",description: "RT-AC5300",img : "",alt : "There is no image"},
-        {id: 3, title: "Router",description: "Router",img : "",alt : "There is no image"}
+        {
+          id: 2,
+          title: 'Router', 
+          description: `RT-AC5300`,
+          img: '',
+          link: '192.168.0.1'
+        }
       ]
     }
     render() {

@@ -25,7 +25,7 @@ export default class Card extends Component {
                     <div>
                         <span></span>
                         <span></span>
-                        <img src={c.img} alt={c.alt}/>
+                        <img src={c.img} alt={c.title+"_icon"}/>
                         <h4>{c.title}</h4>
                         <p>{c.description}</p>
                     </div>

@@ -13,10 +13,9 @@
   margin: 0 !important;
 }
 
-html, body{
+html, body, #root{
   width: 100%;
-  min-height: 100%!important;
-  height: 100%;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, select, div, footer, header, section, nav{
