@@ -6,9 +6,9 @@ function Details(props) {
     return (
         <div id="detail_view" onClick={props.onClose}>
             <div>
-                <h1>{p.title}</h1>
-                <p>{p.description}</p>
-                <p>Link : <a href={'http://'+p.link}>{p.link}</a></p>
+                <h1>{p.ctitle}</h1>
+                <p>{p.cdescription}</p>
+                <p>Link : <a href={'http://'+p.caddress}>{p.caddress}</a></p>
                 <img src={p.img} alt={p.img+'_icon'}/>
             </div>
         </div>
