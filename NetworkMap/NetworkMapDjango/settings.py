@@ -62,11 +62,11 @@ TEMPLATES = [
     },
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'frontEnd', "build", "static"),
+    os.path.join(BASE_DIR, 'frontEnd/build/static/'),
 )
-STATICROOT = os.path.join(BASE_DIR, 'static')
 
 
 WSGI_APPLICATION = 'NetworkMapDjango.wsgi.application'
@@ -120,5 +120,9 @@ if DEBUG is False:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_ROOT= os.path.join(BASE_DIR, 'Api/img/')
-MEDIA_URL= "/img/"
+# MEDIA_ROOT= os.path.join(BASE_DIR, 'staticfiles/img/')
+# MEDIA_URL= ""
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SESSION_EXPIRE_AT_BROWSER_CLOSE=True
