@@ -15,7 +15,7 @@ if settings.DEBUG:
         path('admin/', admin.site.urls, name='admin'),
     )
 else:
-    urlpatterns += (
+    urlpatterns.append(
         re_path(r'^static/(?P<path>.*)$', serve, { 'document_root': settings.STATIC_ROOT })
     )
 

@@ -14,7 +14,6 @@ class Login extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
     // JUST A PLACEHOLDER
     if (this.state.email === "danygauthier57@yahoo.ca" && this.state.password === "Abc123$"){
       this.props.history.push("/")

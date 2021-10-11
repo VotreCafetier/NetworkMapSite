@@ -118,11 +118,8 @@ if DEBUG is False:
         )
     }
 
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SESSION_EXPIRE_AT_BROWSER_CLOSE=True
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# MEDIA_ROOT= os.path.join(BASE_DIR, 'staticfiles/img/')
-# MEDIA_URL= ""
-
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SESSION_EXPIRE_AT_BROWSER_CLOSE=True
