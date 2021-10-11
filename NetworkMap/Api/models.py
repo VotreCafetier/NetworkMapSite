@@ -14,11 +14,3 @@ class Card(models.Model):
     class Meta:
         managed = True
         db_table = 'CARD'
-
-class User(models.Model):
-    user_ID = models.AutoField(primary_key=True)
-    email = models.TextField(max_length=255, blank=False, default='', unique=True)
-    password = models.TextField(max_length=255, blank=False, default='')
-
-    def __str__(self):
-        return self.email

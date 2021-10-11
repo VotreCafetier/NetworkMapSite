@@ -139,3 +139,15 @@
     opacity: 0.01;
     transition: opacity 0.2s ease-out;
   }
+
+
+@media only screen and (max-width: 900px) {
+    #card_holder{
+        display: block;
+        max-width: fit-content!important;
+    }
+    
+    .Card:not(:first-child){
+        margin-top: 50px!important;
+    }
+}
