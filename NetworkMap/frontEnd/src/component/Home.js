@@ -12,6 +12,7 @@ class Home extends Component{
 
     getCards = () => {
         axios.get(API_URL).then(res => this.setState({ cards: res.data }));
+        console.log(this.state);
     };
     
     componentDidMount() {

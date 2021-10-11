@@ -21,3 +21,9 @@ Network Map of my own place. Shows status of servers, Bot, etc.
 ## Nice to have
 - faire favicon
 - Ajouter image pour router
+
+
+# Production 
+- Build react
+- Collect static
+- Disable debug mode

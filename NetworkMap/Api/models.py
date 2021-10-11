@@ -6,7 +6,7 @@ class Card(models.Model):
     cTitle = models.TextField(db_column='cTitle', max_length=14, blank=False, default='')  # Field name made lowercase. This field type is a guess.
     cAddress = models.TextField(db_column='cAddress', blank=True, null=True)  # Field name made lowercase. This field type is a guess.
     cDescription = models.TextField(db_column='cDescription', blank=True, null=True)  # Field name made lowercase.
-    cImage = models.ImageField(upload_to='static/img/')
+    cImage = models.ImageField(upload_to='img/')
         
     def __str__(self):
         return self.cTitle
