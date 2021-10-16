@@ -17,6 +17,7 @@ Network Map of my own place. Shows status of servers, Bot, etc.
 - Enlever le strict mode
 - Responsive
 - On keypress enter login
+- https
 
 ## Nice to have
 - faire favicon

@@ -6,13 +6,18 @@ import { API_URL } from '../constants';
 
 class Home extends Component{
     state = {
-      cards : [],
-      isAuthentificated : false
+      cards : []
     }
 
     getCards = () => {
-        axios.get(API_URL).then(res => this.setState({ cards: res.data }));
-        console.log(this.state);
+      axios.get(API_URL,{
+        headers: {
+          'Authorization': `JWT ${this.props.token}`
+        }
+      })
+      .then((res) => {
+        this.setState({ cards: res.data });
+        });
     };
     
     componentDidMount() {
